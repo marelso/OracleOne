@@ -7,9 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 
     <title>Criptografia</title>
 </head>
@@ -19,17 +17,19 @@
     </header>
     <main>
         <section>
-            <textarea id="" placeholder="Type your message..." cols="30" rows="10"></textarea>
+            <textarea id="input" placeholder="Type your message..." cols="30" rows="10"></textarea>
 
             <div class="buttons">
-                <button id="btn_encrypt">Encrypt message</button>
-                <button id="btn_decrypt">Decrypt message</button>
+                <button id="btnEncrypt" onclick="btnEncrypt_OnClick()">Encrypt message</button>
+                <button id="btnDecrypt" onclick="btnDecrypt_OnClick()">Decrypt message</button>
             </div>
         </section>
 
         <section>
-            <textarea id="" cols="30" rows="10"></textarea>
+            <textarea id="result" cols="30" rows="10"></textarea>
+            <button id="btnCopy" onclick="btnCopy_OnClick()">Copy result!</button>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
